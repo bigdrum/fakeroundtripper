@@ -1,4 +1,4 @@
-# common
+# fakeroundtripper
 --
     import "github.com/bigdrum/fakeroundtripper"
 
@@ -14,12 +14,12 @@ type FakeRoundTripper struct {
 
 FakeRoundTripper for unitests.
 
-#### func  NewFakeRoundTripper
+#### func  New
 
 ```go
-func NewFakeRoundTripper() *FakeRoundTripper
+func New() *FakeRoundTripper
 ```
-NewFakeRoundTripper creates a new FakeRoundTripper.
+New creates a new FakeRoundTripper.
 
 #### func (*FakeRoundTripper) BindContent
 

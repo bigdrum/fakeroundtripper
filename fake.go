@@ -1,4 +1,4 @@
-package common
+package fakeroundtripper
 
 import (
 	"bytes"
@@ -72,8 +72,8 @@ func (f *FakeRoundTripper) BindHandler(prefix string, handler http.Handler) {
 	f.urlToHandlerMap[prefix] = handler
 }
 
-// NewFakeRoundTripper creates a new FakeRoundTripper.
-func NewFakeRoundTripper() *FakeRoundTripper {
+// New creates a new FakeRoundTripper.
+func New() *FakeRoundTripper {
 	return &FakeRoundTripper{
 		make(map[string]string),
 		make(map[string]string),
